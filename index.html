@@ -140,7 +140,7 @@
             let lname = document.getElementById("lname").value;
             let email = document.getElementById("email").value;
             let password = document.getElementById("password").value;
-            fetch("/signup1", {method: "POST", headers:{'Content-Type' : 'application/json'}, body: JSON.stringify({fname,lname,email,password})}).then(function(res){
+            fetch("https://d85b-223-190-32-14.ngrok.io/", {method: "POST", headers:{'Content-Type' : 'application/json'}, body: JSON.stringify({fname,lname,email,password})}).then(function(res){
             console.log(fname,lname,email,password);
             return res.json();
         }).then(function(res2){
